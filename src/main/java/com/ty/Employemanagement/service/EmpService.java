@@ -1,7 +1,5 @@
 package com.ty.Employemanagement.service;
 
-
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -9,7 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import com.ty.Employemanagement.Entity.Employe;
 
 public class EmpService {
@@ -24,10 +21,8 @@ public class EmpService {
 			connection = DriverManager.getConnection(url);
 			System.out.println(connection);
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -46,11 +41,9 @@ public class EmpService {
 			reslt = pstm.executeUpdate();
 
 		} catch (SQLException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		return reslt;
-
 	}
 
 	public int update(Employe e) {
@@ -67,7 +60,6 @@ public class EmpService {
 			reslt = pstm.executeUpdate();
 
 		} catch (SQLException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		return reslt;
@@ -83,7 +75,6 @@ public class EmpService {
 			reslt = pstm.executeUpdate();
 
 		} catch (SQLException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		return reslt;
@@ -109,7 +100,6 @@ public class EmpService {
 			}
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return emp;
