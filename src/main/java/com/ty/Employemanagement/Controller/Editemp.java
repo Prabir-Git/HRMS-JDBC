@@ -3,14 +3,12 @@ package com.ty.Employemanagement.Controller;
 
 
 import java.io.IOException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import com.ty.Employemanagement.Entity.Employe;
 import com.ty.Employemanagement.service.EmpService;
 
@@ -30,8 +28,6 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 	int salarys=Integer.parseInt(salaray);
 	
 	Employe e=new Employe(ids, name, agess, email, salarys);
-	
-	
 	EmpService empService=new EmpService();
 	int res=empService.update(e);
 	if (res!=0) {

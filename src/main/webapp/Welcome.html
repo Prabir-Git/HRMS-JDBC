@@ -7,15 +7,15 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-image: url('images/welcom2pic.jpg'); /* Replace with your folder and image name */
-            background-size: cover; /* Makes the image cover the entire viewport */
-            background-repeat: no-repeat; /* Ensures the image does not repeat */
-            background-position: center; /* Centers the image */
-            background-attachment: fixed; /* Keeps the image fixed during scrolling */
+            background-image: url('images/welcom2pic.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
             margin: 0;
             padding: 0;
-            overflow:hidden;
-            height: 100vh; /* Ensures the body takes up the full height of the viewport */
+            overflow: hidden;
+            height: 100vh;
         }
 
         .container {
@@ -26,13 +26,13 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             border-radius: 18px;
             max-width: 600px;
-            margin-top: 180px; /* Adjusted for better alignment */
+            margin-top: 180px;
         }
 
         .container h1 {
             position: relative;
-            color:black;
-            top: -10px; /* #34495E Move the heading slightly upward */
+            color: black;
+            top: -10px;
         }
 
         .button-container {
@@ -50,14 +50,14 @@
             font-size: 16px;
             border: none;
             border-radius: 5px;
-            background-color: #2980B9; /* Corporate blue */
+            background-color: #2980B9;
             color: white;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s ease-in-out;
         }
 
         .button-container button:hover {
-            background-color: #1C5983; /* Darker blue on hover */
+            background-color: #1C5983;
             transform: scale(1.05);
         }
 
@@ -68,19 +68,19 @@
         }
 
         .navbar {
-            background-color: #2C3E50; /* Charcoal grey for professionalism */
+            background-color: #2C3E50;
             padding: 15px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             color: #FFFFFF;
             font-size: 20px;
-            width: 100%; /* Span the full width */
+            width: 100%;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            position: fixed; /* Fix it to the top */
+            position: fixed;
             top: 0;
             left: 0;
-            z-index: 10; /* Ensure it stays above other content */
+            z-index: 10;
         }
 
         .navbar h1 {
@@ -99,7 +99,7 @@
         }
 
         .right-buttons button {
-            background-color: #2980B9; /* Green for positive actions */
+            background-color: #2980B9;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -110,7 +110,7 @@
         }
 
         .right-buttons button:hover {
-            background-color: #1C5983; /* Darker green on hover */
+            background-color: #1C5983;
             transform: scale(1.05);
         }
     </style>
@@ -149,13 +149,11 @@
         <div id="output"></div>
     </div>
 
-    <!-- Include the Canvas Confetti library -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script>
-        // Function to launch confetti on page load
         function launchConfetti() {
-            const duration = 5 * 1000; // 5 seconds
+            const duration = 5000;
             const end = Date.now() + duration;
 
             (function frame() {
@@ -178,7 +176,6 @@
             })();
         }
 
-        // Trigger confetti effect on page load
         window.onload = launchConfetti;
     </script>
 </body>
