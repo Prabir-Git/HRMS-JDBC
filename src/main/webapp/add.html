@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+body {
+	
+	background-image: url('images/welcom2pic.jpg');
+	/* Replace with your folder and image name */
+	background-size: cover; /* Makes the image cover the entire viewport */
+	background-repeat: no-repeat; /* Ensures the image does not repeat */
+	background-position: center; /* Centers the image */
+	background-attachment: fixed;	
+	font-family: Arial, sans-serif;
+	background-color:#BCC6CC;
+	
+	/* padding-right: 150px; */
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	text-align: center;
+	background-color: rgba(255, 255, 255, );
+	padding: 20px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 18px;
+	width: 400px;
+	margin-top: 110px;
+	overflow: hidden;
+}
+
+h1 {
+	margin-bottom: 20px;
+	color:white;
+	margin-right:60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align everything to the left */
+}
+
+label {
+    margin: 10px 0 5px;
+    color: white;
+    text-align: left; /* Ensure text aligns to the left */
+    display: block; /* Keep label above the input field */
+    width: 100%; /* Take the full width of the container */
+}
+
+input {
+    padding: 10px;
+    width: 100%; /* Adjust width to take full space */
+    max-width: 300px; /* Optional: Limit the input width */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button {
+	margin-left : 10px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background-color: #2980B9;
+	color: white;
+	transition: background-color 0.3s;
+}
+
+#sbt{
+margin-left:110px;
+}
+
+button:hover {
+	background-color: #1C5983;
+}
+
+.navbar {
+	background-color: #2C3E50; /* Charcoal grey for professionalism */
+	padding: 15px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #FFFFFF;
+	font-size: 20px;
+	width: 100%; /* Span the full width */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: fixed; /* Fix it to the top */
+	top: 0;
+	left: 0;
+	z-index: 10; /* Ensure it stays above other content */
+}
+
+.navbar h1 {
+	margin: 0;
+	font-weight: 500;
+	
+}
+
+.right-buttons {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 40px;
+}
+
+.right-buttons a {
+	margin-right: 20px;
+}
+
+.right-buttons button {
+	background-color: #2980B9; /* Green for positive actions */
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.right-buttons button:hover {
+	background-color: #1C5983; /* Darker green on hover */
+	transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+
+	<div class="navbar">
+		<h1>HR Management</h1>
+		<div class="right-buttons">
+			<a href="Welcome.html">
+				<button>Home</button>
+			</a> <a href="editform.html">
+				<button>Edit</button>
+			</a> <a href="deleteform.html">
+				<button>Delete</button>
+			</a>
+
+			<form action="displays">
+				<button>Display</button>
+			</form>
+		</div>
+	</div>
+	<div class="container">
+
+		<h1>New Employee Registration</h1>
+
+		<form action="save">
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" required>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary" required>
+    
+    <button type="submit" id="sbt">Register</button>
+</form>
+
+	</div>
+	<script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const id = document.getElementById('id').value;
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const email = document.getElementById('email').value;
+            const salary = document.getElementById('salary').value;
+            
+            const output = `
+                <p>Registration Successful!</p>
+                <p><strong>ID:</strong> ${id}</p>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Age:</strong> ${age}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Salary:</strong> ${salary}</p>
+            `;
+            
+            document.getElementById('output').innerHTML = output;
+        });
+    </script>
+</body>
+</html>

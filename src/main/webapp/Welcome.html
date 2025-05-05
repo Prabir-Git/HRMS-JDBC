@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Employee Management</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('images/welcom2pic.jpg'); /* Replace with your folder and image name */
+            background-size: cover; /* Makes the image cover the entire viewport */
+            background-repeat: no-repeat; /* Ensures the image does not repeat */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Keeps the image fixed during scrolling */
+            margin: 0;
+            padding: 0;
+            overflow:hidden;
+            height: 100vh; /* Ensures the body takes up the full height of the viewport */
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 80px auto;       
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 18px;
+            max-width: 600px;
+            margin-top: 180px; /* Adjusted for better alignment */
+        }
+
+        .container h1 {
+            position: relative;
+            color:black;
+            top: -10px; /* #34495E Move the heading slightly upward */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button-container form {
+            margin: 0 10px;
+        }
+
+        .button-container button {
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2980B9; /* Corporate blue */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s ease-in-out;
+        }
+
+        .button-container button:hover {
+            background-color: #1C5983; /* Darker blue on hover */
+            transform: scale(1.05);
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #495057;
+        }
+
+        .navbar {
+            background-color: #2C3E50; /* Charcoal grey for professionalism */
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFFFFF;
+            font-size: 20px;
+            width: 100%; /* Span the full width */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed; /* Fix it to the top */
+            top: 0;
+            left: 0;
+            z-index: 10; /* Ensure it stays above other content */
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .right-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 40px;
+        }
+
+        .right-buttons a {
+            margin-right: 20px;
+        }
+
+        .right-buttons button {
+            background-color: #2980B9; /* Green for positive actions */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s ease-in-out;
+        }
+
+        .right-buttons button:hover {
+            background-color: #1C5983; /* Darker green on hover */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>HR Management</h1>
+        <div class="right-buttons">
+            <a href="add.html">
+                <button>Add</button>
+            </a>
+            <a href="editform.html">
+                <button>Edit</button>
+            </a>
+            <a href="deleteform.html">
+                <button>Delete</button>
+            </a>
+            <form action="displays">
+                <button>Display</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to</h1> 
+        <h1>HR Management System</h1>
+        <div class="button-container">
+            <form action="adds">
+                <button onclick="addEmployee()">Add Employee</button>
+            </form>
+            <form action="displays">
+                <button onclick="displayEmployee()">Display Employee</button>
+            </form>
+        </div>
+        <div id="output"></div>
+    </div>
+
+    <!-- Include the Canvas Confetti library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        // Function to launch confetti on page load
+        function launchConfetti() {
+            const duration = 5 * 1000; // 5 seconds
+            const end = Date.now() + duration;
+
+            (function frame() {
+                confetti({
+                    particleCount: 5,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 }
+                });
+                confetti({
+                    particleCount: 5,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 }
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            })();
+        }
+
+        // Trigger confetti effect on page load
+        window.onload = launchConfetti;
+    </script>
+</body>
+</html>
