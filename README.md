@@ -51,3 +51,15 @@ Example:
 - `employee_list.png`
 
 ---
+
+
+**Prabir Rout**  
+💼 Java Full Stack Developer(Proficient in Backend Development)  
+📧 [prabirrout32@gmail.com](mailto:prabirrout32@gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/your-username/)  
+🌐 [GitHub: Prabir-Git](https://github.com/Prabir-Git)  
+📍 Bangalore, India
+
+---
+
+
