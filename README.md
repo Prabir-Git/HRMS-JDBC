@@ -13,36 +13,21 @@
 
 ---
 
-### 🔧 Tech Stack
+## 🧠 Learning Highlights
 
-- 💻 Languages: `Java`, `JavaScript`, `SQL`, `HTML`, `CSS`
-- 🧰 Frameworks: `Spring Boot`, `Hibernate`, `JSP`, `Servlets`
-- 🗃️ Databases: `PostgreSQL`, `MySQL`
-- 🔌 Tools: `Git`, `Postman`, `Eclipse`, `STS`, `NetBeans`
-- ☁️ Deployment: `Render`, `GitHub Pages`, `Heroku` (if used)
+- JDBC connection pooling and SQL exception handling
+- MVC architecture in pure Java (without frameworks)
+- Frontend integration with backend through forms and scripts
+- Clean code and modular structure
 
----
+## 🎯 Why This Project?
 
-### 💼 Projects
+✅ To master JDBC and SQL in a practical context  
+✅ To show full-stack capabilities without relying on frameworks  
+✅ To simulate a **real-world HR workflow** with CRUD operations
 
-| Project | Tech | Description |
-|--------|------|-------------|
-| [HRMS-JDBC](https://github.com/Prabir-Git/HRMS-JDBC) | Java, JDBC, HTML, CSS, JS | A complete HR Management System to handle employees 
+## 🛠 How to Run the Project
 
-
----
-
-### 🔥 What I'm up to:
-- 🌱 Deep diving into `Spring Boot`, `Backend Developmen`, and `System Design`
-- 🛠 Building real-world clones to showcase practical skills
-- 🎯 Preparing for full-time backend as well as frontend developer opportunities
-
----
-
-### 📫 Let's Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/prabir-rout32)
-
----
-
-> ⚡ *“Code is not just instructions. It's your fingerprint in the digital world.”*
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/Prabir-Git/HRMS-JDBC.git
