@@ -12,22 +12,42 @@
 </p>
 
 ---
+# 👔 Human Resource Management System (HRMS) – Full Stack Web App
 
-## 🧠 Learning Highlights
+A fully functional web-based HR Management System built using Java (JDBC), HTML, CSS, JavaScript, and PostgreSQL. It allows HRs to manage employees efficiently through an intuitive browser-based interface.
 
-- JDBC connection pooling and SQL exception handling
-- MVC architecture in pure Java (without frameworks)
-- Frontend integration with backend through forms and scripts
-- Clean code and modular structure
+---
 
-## 🎯 Why This Project?
+## 🌐 Tech Stack
 
-✅ To master JDBC and SQL in a practical context  
-✅ To show full-stack capabilities without relying on frameworks  
-✅ To simulate a **real-world HR workflow** with CRUD operations
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Java, Servlets, JDBC
+- **Database**: PostgreSQL
+- **Build Tool**: Maven
+- **Deployment**: Runs on Apache Tomcat
 
-## 🛠 How to Run the Project
+---
 
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/Prabir-Git/HRMS-JDBC.git
+## 🧩 Features
+
+✅ Add New Employee  
+✅ Edit Employee Information  
+✅ Delete Employee Record  
+✅ View All Employees  
+✅ Search Employee by Name/ID  
+✅ Browser-based UI  
+✅ Clean separation of frontend & backend layers  
+✅ SQL injection-safe JDBC queries  
+✅ Modular and maintainable codebase
+
+---
+
+## 📸 UI Screenshots
+
+> _Add screenshots of your UI here (Home Page, Add Employee Form, View Table, etc.)_  
+Example:
+- `home_page.png`
+- `add_employee.png`
+- `employee_list.png`
+
+---
